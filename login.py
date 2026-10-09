@@ -6,4 +6,5 @@ def test_ackcio_login(page: page):
     page.get_by_label("Password").fill("Admin@123")
     page.wait_for_timeout(5000)
     page.get_by_role("button", name="Login").click()
-
+    page.close()
+    
